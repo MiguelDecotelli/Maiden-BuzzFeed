@@ -1,0 +1,21 @@
+<div class="container quizz-container">
+    <div class="quizz-logo">
+        <h1>MAIDEN FEED</h1>
+    </div>
+    <div *ngIf=!finished class="quizz-questions">
+        <h2>{{myTitle}}</h2>
+        <h3>{{selectedQuestion.question}}</h3>
+    </div>
+    <div *ngIf=!finished class="quizz-options">
+        <button *ngFor="let option of selectedQuestion.options; let i = index" (click)="playerChoice(option.alias)"
+            class="btn-option">
+            {{option.name}}
+        </button>
+    </div>
+    <div *ngIf=finished class="quizz-results">
+        <div *ngIf="selectedAnswer">
+            <h4>SEU ÁLBUM PREFERIDO É:</h4>
+            <img [src]="selectedAnswer.imagePath" alt="Quizz_Result">
+        </div>
+    </div>
+</div>

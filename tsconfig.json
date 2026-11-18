@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "ignoreDeprecations": "5.0",
     "outDir": "./dist/out-tsc",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,

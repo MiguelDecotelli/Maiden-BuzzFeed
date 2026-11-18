@@ -1,412 +1,259 @@
 {
-  "title": "Você sabe qual álbum do Iron Maiden você mais gosta?",
+  "title": "Descubra a sua verdadeira alma Maiden",
   "questions": [
     {
-      "id": 1,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "Qual destas faixas 'Lado B' (menos tocadas ao vivo) é uma obra-prima injustiçada?",
       "options": [
-        {
-          "id": 1,
-          "name": "Hallowed Be thy Name",
-          "alias": "Number of the Beast"
-        },
-        {
-          "id": 2,
-          "name": "The Evil That Men Do",
-          "alias": "Seventh Son of a Seventh Son"
-        },
-        {
-          "id": 3,
-          "name": "The Trooper",
-          "alias": "Piece of Mind"
-        },
-        {
-          "id": 4,
-          "name": "Powerslave",
-          "alias": "Powerslave"
-        },
-        {
-          "id": 5,
-          "name": "Iron Maiden",
-          "alias": "Iron Maiden"
-        },
-        {
-          "id": 6,
-          "name": "Fear of the Dark",
-          "alias": "Fear of the Dark"
-        }
+        {"name": "'Alexander the Great' — o épico histórico definitivo.", "scores": {"somewhere": 3, "powerslave": 2}},
+        {"name": "'To Tame a Land' — a viagem inspirada em Duna.", "scores": {"piece": 3, "powerslave": 1}},
+        {"name": "'Infinite Dreams' — progressiva, melancólica e genial.", "scores": {"seventh": 3, "somewhere": 1}},
+        {"name": "'Judas Be My Guide' — rápida, melódica e afiada.", "scores": {"fear": 3, "no_prayer": 1}}
       ]
     },
     {
-      "id": 2,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "Qual destas introduções musicais te causa mais arrepios quando começa a tocar?",
       "options": [
-        {
-          "id": 1,
-          "name": "If Eternity Should Fail",
-          "alias": "Book of Souls"
-        },
-        {
-          "id": 2,
-          "name": "Heaven Can Wait",
-          "alias": "Somewhere in Time"
-        },
-        {
-          "id": 3,
-          "name": "Hel on Earth",
-          "alias": "Senjutsu"
-        },
-        {
-          "id": 4,
-          "name": "Coming Home",
-          "alias": "Final Frontier"
-        },
-        {
-          "id": 5,
-          "name": "Dance of Death",
-          "alias": "Dance of Death"
-        },
-        {
-          "id": 6,
-          "name": "Brave New World",
-          "alias": "Brave New World"
-        }
+        {"name": "O discurso histórico de Winston Churchill preparando para a batalha.", "scores": {"powerslave": 3, "amoad": 1}},
+        {"name": "A narração sombria do Apocalipse ('Woe to you, oh earth and sea...').", "scores": {"notb": 3, "fear": 1}},
+        {"name": "O dedilhado acústico calmo que explode no riff de 'The Wicker Man' ou 'Ghost of the Navigator'.", "scores": {"brave": 3, "dance": 2}},
+        {"name": "A linha de baixo pulsante e solitária de Steve Harris em 'Wrathchild'.", "scores": {"killers": 3, "iron_maiden": 2}}
       ]
     },
     {
-      "id": 3,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "As letras do Maiden são cheias de literatura e cinema. Qual destas inspirações você prefere?",
       "options": [
-        {
-          "id": 1,
-          "name": "RainMaker",
-          "alias": "Dance of Death"
-        },
-        {
-          "id": 2,
-          "name": "Wrathchild",
-          "alias": "Killers"
-        },
-        {
-          "id": 3,
-          "name": "Bring Your Daugther...",
-          "alias": "No Prayer for the Dying"
-        },
-        {
-          "id": 4,
-          "name": "Number of The Beast",
-          "alias": "Number of the Beast"
-        },
-        {
-          "id": 5,
-          "name": "For the Greater Good of God",
-          "alias": "Matter of Life and Death"
-        },
-        {
-          "id": 6,
-          "name": "Where Eagles Dare",
-          "alias": "Piece of Mind"
-        }
+        {"name": "'O Marinheiro Ancião' (Samuel Taylor Coleridge) e o Egito Antigo.", "scores": {"powerslave": 3, "seventh": 1}},
+        {"name": "'Admirável Mundo Novo' (Aldous Huxley) e 'O Homem de Palha'.", "scores": {"brave": 3, "amoad": 1}},
+        {"name": "'Assassinatos na Rua Morgue' (Edgar Allan Poe) e 'O Fantasma da Ópera'.", "scores": {"killers": 3, "iron_maiden": 3}},
+        {"name": "'Um Estranho no Ninho', mitologia grega (Ícaro) e 'Blade Runner'.", "scores": {"piece": 3, "somewhere": 2}}
       ]
     },
     {
-      "id": 4,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "Na faixa 'Paschendale', sobre os horrores das trincheiras da Primeira Guerra, qual álbum brilha?",
       "options": [
-        {
-          "id": 1,
-          "name": "No Prayer for the Dying",
-          "alias": "No Prayer for the Dying"
-        },
-        {
-          "id": 2,
-          "name": "The Ghost of Navigator",
-          "alias": "Brave New World"
-        },
-        {
-          "id": 3,
-          "name": "The Parchment",
-          "alias": "Senjutsu"
-        },
-        {
-          "id": 3,
-          "name": "Deja-Vu",
-          "alias": "Somewhere in Time"
-        },
-        {
-          "id": 5,
-          "name": "The Clairvoyant",
-          "alias": "Seventh Son of the Seventh Son"
-        },
-        {
-          "id": 6,
-          "name": "Aces High",
-          "alias": "Powerslave"
-        }
+        {"name": "Dance of Death — teatral, sombrio e cheio de reviravoltas.", "scores": {"dance": 3, "brave": 1}},
+        {"name": "A Matter of Life and Death — pesado, militarista e quase sem pausas.", "scores": {"amoad": 3, "final_frontier": 1}},
+        {"name": "Senjutsu — épico, cadenciado e com atmosfera cinematográfica.", "scores": {"senjutsu": 3, "book_of_souls": 2}},
+        {"name": "Piece of Mind — prefiro os clássicos de guerra dos anos 80 como 'The Trooper'.", "scores": {"piece": 3, "powerslave": 2}}
       ]
     },
     {
-      "id": 5,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "Qual destas músicas instrumentais da banda é a sua favorita?",
       "options": [
-        {
-          "id": 1,
-          "name": "Can I play With Madness",
-          "alias": "Seventh Son of the Seventh Son"
-        },
-        {
-          "id": 2,
-          "name": "Phantom of the Opera",
-          "alias": "Iron Maiden"
-        },
-        {
-          "id": 3,
-          "name": "Blood Brothers",
-          "alias": "Brave New World"
-        },
-        {
-          "id": 4,
-          "name": "Different World",
-          "alias": "Matter of Life and Death"
-        },
-        {
-          "id": 5,
-          "name": "Be Quick or Be Dead",
-          "alias": "Fear of the Dark"
-        },
-        {
-          "id": 6,
-          "name": "Flight of Icarus",
-          "alias": "Piece of Mind"
-        }
+        {"name": "'Transylvania' — velocidade pura e energia punk-metal.", "scores": {"iron_maiden": 3, "killers": 2}},
+        {"name": "'Genghis Khan' — técnica, pesada e cheia de mudanças de andamento.", "scores": {"killers": 3, "notb": 1}},
+        {"name": "'Losfer Words (Big 'Orra)' — galopadas clássicas de estádio.", "scores": {"powerslave": 3, "piece": 2}},
+        {"name": "Prefiro os longos trechos instrumentais dentro de épicos de 10 minutos.", "scores": {"book_of_souls": 3, "senjutsu": 2, "seventh": 2}}
       ]
     },
     {
-      "id": 6,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "Qual detalhe de capa de álbum (arte do Derek Riggs ou fases seguintes) você acha mais genial?",
       "options": [
-        {
-          "id": 1,
-          "name": "Paschendale",
-          "alias": "Dance of Death"
-        },
-        {
-          "id": 2,
-          "name": "Run to The Hills",
-          "alias": "Number of the Beast"
-        },
-        {
-          "id": 3,
-          "name": "Murders in the Rue Morgue",
-          "alias": "Killers"
-        },
-        {
-          "id": 4,
-          "name": "The Red and the Black",
-          "alias": "Book of Souls"
-        },
-        {
-          "id": 5,
-          "name": "Rime of the Ancient Mariner",
-          "alias": "Powerslave"
-        },
-        {
-          "id": 6,
-          "name": "When the Wild Wind Blows",
-          "alias": "Final Frontier"
-        }
+        {"name": "As dezenas de referências escondidas nas ruas futuristas de 'Somewhere in Time'.", "scores": {"somewhere": 3, "seventh": 1}},
+        {"name": "Eddie segurando o machado sob os postes de luz de Londres em 'Killers'.", "scores": {"killers": 3, "iron_maiden": 2}},
+        {"name": "Eddie acorrentado e lobotomizado no hospício de 'Piece of Mind'.", "scores": {"piece": 3, "notb": 1}},
+        {"name": "Eddie Samurai em 'Senjutsu' ou Xamã Maia em 'The Book of Souls'.", "scores": {"senjutsu": 3, "book_of_souls": 3}}
       ]
     },
     {
-      "id": 7,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "Qual foi a estreia mais impactante de um integrante na história da banda?",
       "options": [
-        {
-          "id": 1,
-          "name": "Remember Tomorrow",
-          "alias": "Iron Maiden"
-        },
-        {
-          "id": 2,
-          "name": "Wasting Love",
-          "alias": "Fear of the Dark"
-        },
-        {
-          "id": 3,
-          "name": "These Colors Don't Run",
-          "alias": "Matter of Life and Death"
-        },
-        {
-          "id": 4,
-          "name": "Run Silent Run Deep",
-          "alias": "No Prayer for the Dying"
-        },
-        {
-          "id": 5,
-          "name": "The Time Machine",
-          "alias": "Senjutsu"
-        },
-        {
-          "id": 6,
-          "name": "Wasted Years",
-          "alias": "Somewhere in Time"
-        }
+        {"name": "Bruce Dickinson chegando com os dois pés na porta em 'The Number of the Beast'.", "scores": {"notb": 3, "piece": 1}},
+        {"name": "Nicko McBrain assumindo a bateria já na virada histórica de 'Where Eagles Dare'.", "scores": {"piece": 3, "powerslave": 1}},
+        {"name": "Adrian Smith consolidando a dupla de guitarras perfeita em 'Killers'.", "scores": {"killers": 3, "somewhere": 2}},
+        {"name": "Janick Gers trazendo agressividade de palco em 'No Prayer' e no trio de 2000.", "scores": {"no_prayer": 3, "brave": 2, "fear": 2}}
       ]
     },
     {
-      "id": 8,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "Sobre a virada dos anos 90 (saída de Adrian Smith e som mais direto/cru), qual é a sua opinião?",
       "options": [
-        {
-          "id": 1,
-          "name": "The Wicker Man",
-          "alias": "Brave New World"
-        },
-        {
-          "id": 2,
-          "name": "Killers",
-          "alias": "Killers"
-        },
-        {
-          "id": 3,
-          "name": "The Prophecy",
-          "alias": "Seventh Son of the Seventh Son"
-        },
-        {
-          "id": 4,
-          "name": "Talisman",
-          "alias": "Final Frontier"
-        },
-        {
-          "id": 5,
-          "name": "The Great Unknown",
-          "alias": "Book of Souls"
-        },
-        {
-          "id": 6,
-          "name": "No More Lies",
-          "alias": "Dance of Death"
-        }
+        {"name": "Adoro a pegada direta de rua de 'Tailgunner', 'Holy Smoke' e 'Bring Your Daughter'.", "scores": {"no_prayer": 3, "fear": 2}},
+        {"name": "Gosto do clima gótico e das baladas pesadas como 'Wasting Love' e 'Afraid to Shoot Strangers'.", "scores": {"fear": 3, "no_prayer": 1}},
+        {"name": "Prefiro os sintetizadores e o som polido que eles faziam logo antes, em 86 e 88.", "scores": {"somewhere": 3, "seventh": 3}},
+        {"name": "Foi bom, mas o retorno de Bruce e Adrian em 2000 com 'Brave New World' é imbatível.", "scores": {"brave": 3, "dance": 2}}
       ]
     },
     {
-      "id": 9,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "Se você ouvir os primeiros segundos de 'Caught Somewhere in Time' ou 'Moonchild', o que te prende?",
       "options": [
-        {
-          "id": 1,
-          "name": "Children of the Dammed",
-          "alias": "Number of the Beast"
-        },
-        {
-          "id": 2,
-          "name": "The Writing on the Wall",
-          "alias": "Senjutsu"
-        },
-        {
-          "id": 3,
-          "name": "Afraid to Shoot Strangers",
-          "alias": "Fear of the Dark"
-        },
-        {
-          "id": 4,
-          "name": "Tailgunner",
-          "alias": "No Prayer for the Dying"
-        },
-        {
-          "id": 5,
-          "name": "Revelations",
-          "alias": "Piece of Mind"
-        },
-        {
-          "id": 6,
-          "name": "Running Free",
-          "alias": "Iron Maiden"
-        }
+        {"name": "Os sintetizadores de guitarra e teclados criando uma atmosfera espacial.", "scores": {"somewhere": 3, "seventh": 3}},
+        {"name": "O vocal teatral e agudo do Bruce no auge da forma física.", "scores": {"powerslave": 2, "notb": 2, "seventh": 2}},
+        {"name": "Prefiro quando o som é 100% orgânico, sem sintetizadores, puro amplificador no talo.", "scores": {"killers": 3, "iron_maiden": 3, "no_prayer": 2}},
+        {"name": "Gosto da evolução disso nos álbuns modernos, mais progressivos e longos.", "scores": {"final_frontier": 3, "book_of_souls": 2, "senjutsu": 2}}
       ]
     },
     {
-      "id": 10,
-      "question": "Escolha uma música dentre as opções:",
+      "question": "Qual destas músicas épicas de encerramento de álbum deixa o melhor gosto de 'quero mais'?",
       "options": [
-        {
-          "id": 1,
-          "name": "2 Minutes to Midnight",
-          "alias": "Powerslave"
-        },
-        {
-          "id": 2,
-          "name": "Purgatory",
-          "alias": "Killers"
-        },
-        {
-          "id": 3,
-          "name": "Caught Somewhere in Time",
-          "alias": "Somewhere in Time"
-        },
-        {
-          "id": 4,
-          "name": "Speed of Light",
-          "alias": "Book of Souls"
-        },
-        {
-          "id": 5,
-          "name": "The Final Frontier",
-          "alias": "Final Frontier"
-        },
-        {
-          "id": 6,
-          "name": "The Legacy",
-          "alias": "Matter of Life and Death"
-        }
+        {"name": "'Hallowed Be Thy Name' — simplesmente a maior música de Heavy Metal já escrita.", "scores": {"notb": 3, "piece": 1}},
+        {"name": "'Rime of the Ancient Mariner' — 13 minutos que passam voando.", "scores": {"powerslave": 3, "seventh": 1}},
+        {"name": "'Empire of the Clouds' — 18 minutos com Bruce no piano contando a tragédia do dirigível R101.", "scores": {"book_of_souls": 3, "senjutsu": 2}},
+        {"name": "'Hell on Earth' ou 'When the Wild Wind Blows' — melodias emocionantes do início ao fim.", "scores": {"senjutsu": 3, "final_frontier": 3}}
+      ]
+    },
+    {
+      "question": "Qual destas faixas rápidas de abertura é o melhor tiro de largada para um show?",
+      "options": [
+        {"name": "'Aces High' — sirenes antiaéreas e velocidade máxima.", "scores": {"powerslave": 3, "piece": 2}},
+        {"name": "'Be Quick or Be Dead' — agressiva, rouca e pesada.", "scores": {"fear": 3, "no_prayer": 2}},
+        {"name": "'Prowler' ou 'Ides of March / Wrathchild' — o charme subterrâneo do início.", "scores": {"iron_maiden": 3, "killers": 3}},
+        {"name": "'Different World' ou 'The Wicker Man' — refrões gigantescos e modernos.", "scores": {"amoad": 3, "brave": 3}}
+      ]
+    },
+    {
+      "question": "No século XXI, o Maiden ficou mais progressivo. Qual destes momentos modernos te representa?",
+      "options": [
+        {"name": "O peso sombrio e quase sem refrões fáceis de 'Brighter Than a Thousand Suns' e 'The Reincarnation of Benjamin Breeg'.", "scores": {"amoad": 3, "dance": 1}},
+        {"name": "A viagem sci-fi madura de 'The Talisman' e 'Coming Home'.", "scores": {"final_frontier": 3, "somewhere": 1}},
+        {"name": "O violão flamenco e a dramaticidade de 'Dance of Death' e 'No More Lies'.", "scores": {"dance": 3, "brave": 2}},
+        {"name": "O peso monumental de 'The Red and the Black' e 'Stratego'.", "scores": {"book_of_souls": 3, "senjutsu": 3}}
+      ]
+    },
+    {
+      "question": "Qual o seu timbre e estilo de vocal preferido na discografia?",
+      "options": [
+        {"name": "Paul Di'Anno: rasgado, urgente, com um pé no Punk Rock londrino.", "scores": {"iron_maiden": 3, "killers": 3}},
+        {"name": "Bruce nos anos 80: a 'Sirene de Ataque Aéreo' alcançando notas impossíveis.", "scores": {"notb": 3, "piece": 3, "powerslave": 2}},
+        {"name": "Bruce nos anos 90: timbre mais rasgado, agressivo e 'sujo'.", "scores": {"fear": 3, "no_prayer": 3}},
+        {"name": "Bruce pós-2000: voz de barítono madura, interpretativa e contador de histórias.", "scores": {"brave": 2, "amoad": 2, "book_of_souls": 2, "senjutsu": 2}}
+      ]
+    },
+    {
+      "question": "Qual destas sequências matadoras de 3 músicas no mesmo disco é insuperável?",
+      "options": [
+        {"name": "'Where Eagles Dare' ➔ 'Revelations' ➔ 'Flight of Icarus' (Piece of Mind).", "scores": {"piece": 3, "notb": 1}},
+        {"name": "'Moonchild' ➔ 'Infinite Dreams' ➔ 'Can I Play with Madness' (Seventh Son).", "scores": {"seventh": 3, "somewhere": 1}},
+        {"name": "'Brave New World' ➔ 'Blood Brothers' ➔ 'The Mercenary' (Brave New World).", "scores": {"brave": 3, "dance": 1}},
+        {"name": "'The Number of the Beast' ➔ 'Run to the Hills' ➔ 'Gangland / Hallowed' (NOTB).", "scores": {"notb": 3, "powerslave": 1}}
+      ]
+    },
+    {
+      "question": "Se uma música do Maiden tiver uma seção acústica no meio, como ela deve ser?",
+      "options": [
+        {"name": "Melancólica e assombrada como em 'Phantom of the Opera' ou 'Remember Tomorrow'.", "scores": {"iron_maiden": 3, "killers": 2}},
+        {"name": "Misteriosa e mística como no meio de 'The Prophecy' ou 'Seventh Son'.", "scores": {"seventh": 3, "powerslave": 1}},
+        {"name": "Emocionante para cantar abraçado no estádio como 'Blood Brothers' ou 'Fear of the Dark'.", "scores": {"brave": 3, "fear": 3}},
+        {"name": "Cinematográfica e tensa como em 'The Legacy' ou 'The Talisman'.", "scores": {"amoad": 3, "final_frontier": 3}}
+      ]
+    },
+    {
+      "question": "Qual destas faixas 'esquecidas' dos anos 80 merecia voltar imediatamente para o setlist?",
+      "options": [
+        {"name": "'Sea of Madness' ou 'Deja-Vu' — melodias incríveis do Somewhere in Time.", "scores": {"somewhere": 3}},
+        {"name": "'Flash of the Blade' ou 'Back in the Village' — pura adrenalina do Powerslave.", "scores": {"powerslave": 3}},
+        {"name": "'Still Life' ou 'Sun and Steel' — pérolas escondidas do Piece of Mind.", "scores": {"piece": 3}},
+        {"name": "'Purgatory' ou 'Prodigal Son' — o lado mais técnico da era Di'Anno.", "scores": {"killers": 3, "iron_maiden": 2}}
+      ]
+    },
+    {
+      "question": "Quando o assunto é videoclipe clássico ou estética visual, qual te ganha na hora?",
+      "options": [
+        {"name": "Eddie jogando cartas com o Diabo ou cenas de filmes antigos em preto e branco.", "scores": {"notb": 3, "piece": 2}},
+        {"name": "A estética Cyberpunk de 'Wasted Years' e 'Stranger in a Strange Land'.", "scores": {"somewhere": 3, "final_frontier": 2}},
+        {"name": "O clima de animação distópica e futurista de 'Speed of Light' e 'The Writing on the Wall'.", "scores": {"book_of_souls": 3, "senjutsu": 3}},
+        {"name": "Show suado em clube fechado no East End de Londres em 1980.", "scores": {"iron_maiden": 3, "killers": 3, "no_prayer": 2}}
+      ]
+    },
+    {
+      "question": "Para fechar: o que define a essência suprema do Iron Maiden para você?",
+      "options": [
+        {"name": "Duas guitarras gêmeas harmonizadas em terça e o baixo galopando a 200 por hora.", "scores": {"powerslave": 3, "piece": 2, "notb": 2}},
+        {"name": "Álbuns conceituais ou temáticos que te transportam para outro universo.", "scores": {"seventh": 3, "somewhere": 3, "amoad": 2}},
+        {"name": "A coragem de fazer músicas de 12 minutos no século XXI sem ligar para o rádio.", "scores": {"book_of_souls": 3, "senjutsu": 3, "final_frontier": 2}},
+        {"name": "Hinos imortais que unem gerações inteiras gritando 'Scream for me!'", "scores": {"brave": 3, "fear": 3, "dance": 2}}
       ]
     }
   ],
   "results": {
-    "Iron Maiden": {
-      "imagePath": "assets/imgs/iron_maiden.png"
+    "iron_maiden": {
+      "name": "Iron Maiden (1980)",
+      "description": "Você tem a alma do underground londrino! Prefere o som cru, veloz e com a atitude punk de Paul Di'Anno em clássicos como 'Phantom of the Opera' e 'Prowler'.",
+      "imagePath": "assets/imgs/iron_maiden.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%201980%20album"
     },
-    "Killers": {
-      "imagePath": "assets/imgs/killers.png"
+    "killers": {
+      "name": "Killers (1981)",
+      "description": "Riffs afiados como navalha e energia de rua! Você adora a chegada de Adrian Smith e a pegada implacável de 'Wrathchild', 'Murders in the Rue Morgue' e 'Purgatory'.",
+      "imagePath": "assets/imgs/killers.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20Killers%20album"
     },
-    "Number of the Beast": {
-      "imagePath": "assets/imgs/number_of_the_beast.png"
+    "notb": {
+      "name": "The Number of the Beast",
+      "description": "Energia crua, clássicos imortais e temas sombrios. Você tem uma alma Heavy Metal tradicional e vai direto ao ponto com 'Hallowed Be Thy Name' e 'Run to the Hills'!",
+      "imagePath": "assets/imgs/number_of_the_beast.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20The%20Number%20of%20the%20Beast"
     },
-    "Piece of Mind": {
-      "imagePath": "assets/imgs/piece_of_mind.png"
+    "piece": {
+      "name": "Piece of Mind",
+      "description": "Equilíbrio cirúrgico entre peso, literatura e técnica! Com a chegada de Nicko McBrain, hinos como 'The Trooper', 'Revelations' e 'To Tame a Land' definem o seu gosto.",
+      "imagePath": "assets/imgs/piece_of_mind.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20Piece%20of%20Mind"
     },
-    "Powerslave": {
-      "imagePath": "assets/imgs/powerslave.png"
+    "powerslave": {
+      "name": "Powerslave",
+      "description": "História, guerra e grandiosidade! Você é fascinado pelo auge técnico da banda nos anos 80, entre as galopadas de 'Aces High' e a jornada épica de 'Rime of the Ancient Mariner'.",
+      "imagePath": "assets/imgs/powerslave.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20Powerslave"
     },
-    "Somewhere in Time": {
-      "imagePath": "assets/imgs/somewhere_in_time.png"
+    "somewhere": {
+      "name": "Somewhere in Time",
+      "description": "Viajante do tempo! Você ama ficção científica, guitarras sintetizadas, melodias espaciais e pérolas como 'Wasted Years', 'Stranger in a Strange Land' e 'Alexander the Great'.",
+      "imagePath": "assets/imgs/somewhere_in_time.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20Somewhere%20in%20Time"
     },
-    "Seventh Son of a Seventh Son": {
-      "imagePath": "assets/imgs/seventh_son_of_a_seventh_son.png"
+    "seventh": {
+      "name": "Seventh Son of a Seventh Son",
+      "description": "Misticismo e puro metal progressivo oitentista. Você prefere álbuns conceituais que contam uma grande profecia do início ao fim, como 'Infinite Dreams' e 'Moonchild'.",
+      "imagePath": "assets/imgs/seventh_son_of_a_seventh_son.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20Seventh%20Son%20of%20a%20Seventh%20Son"
     },
-    "No Prayer for the Dying": {
-      "imagePath": "assets/imgs/no_prayer_for_the_dying.png"
+    "no_prayer": {
+      "name": "No Prayer for the Dying",
+      "description": "Sem frescura e direto na cara! Você curte a fase despojada do início dos anos 90, com guitarras secas e hinos de arena como 'Tailgunner' e 'Bring Your Daughter... to the Slaughter'.",
+      "imagePath": "assets/imgs/no_prayer_for_the_dying.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20No%20Prayer%20for%20the%20Dying"
     },
-    "Fear of the Dark": {
-      "imagePath": "assets/imgs/fear_of_the_dark.png"
+    "fear": {
+      "name": "Fear of the Dark",
+      "description": "Atmosfera noturna e refrões que levantam estádios inteiros! De 'Be Quick or Be Dead' a 'Judas Be My Guide' e a faixa-título imortal, você adora o lado dramático dos anos 90.",
+      "imagePath": "assets/imgs/fear_of_the_dark.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20Fear%20of%20the%20Dark"
     },
-    "Brave New World": {
-      "imagePath": "assets/imgs/brave_new_world.png"
+    "brave": {
+      "name": "Brave New World",
+      "description": "O grande renascimento! Você vibra com a parede sonora de três guitarras e hinos modernos monumentais como 'The Wicker Man', 'Blood Brothers' e 'Ghost of the Navigator'.",
+      "imagePath": "assets/imgs/brave_new_world.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20Brave%20New%20World"
     },
-    "Dance of Death": {
-      "imagePath": "assets/imgs/dance_of_death.png"
+    "dance": {
+      "name": "Dance of Death",
+      "description": "Teatral, épico e cheio de dinâmicas! Você aprecia a narrativa intensa da banda em obras-primas de batalha e mistério como 'Paschendale' e a faixa-título 'Dance of Death'.",
+      "imagePath": "assets/imgs/dance_of_death.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20Dance%20of%20Death"
     },
-    "Matter of Life and Death": {
-      "imagePath": "assets/imgs/matter_of_life_and_death.png"
+    "amoad": {
+      "name": "A Matter of Life and Death",
+      "description": "Denso, sombrio e incorruptível! Você admira quando a banda desafia os padrões comerciais com um álbum pesado do início ao fim, brilhando em 'For the Greater Good of God'.",
+      "imagePath": "assets/imgs/matter_of_life_and_death.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20A%20Matter%20of%20Life%20and%20Death"
     },
-    "Final Frontier": {
-      "imagePath": "assets/imgs/the_final_frontier.png"
+    "final_frontier": {
+      "name": "The Final Frontier",
+      "description": "Explorador do cosmos! Você gosta da maturidade progressiva do Maiden, unindo peso e emoção em jornadas épicas como 'The Talisman' e 'When the Wild Wind Blows'.",
+      "imagePath": "assets/imgs/the_final_frontier.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20The%20Final%20Frontier"
     },
-    "Book of Souls": {
-      "imagePath": "assets/imgs/the_book_of_souls.png"
+    "book_of_souls": {
+      "name": "The Book of Souls",
+      "description": "Monumental e sem limites de tempo! Você se entrega de corpo e alma aos épicos modernos da banda, de 'The Red and the Black' à obra-prima orquestral 'Empire of the Clouds'.",
+      "imagePath": "assets/imgs/the_book_of_souls.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20The%20Book%20of%20Souls"
     },
-    "Senjutsu": {
-      "imagePath": "assets/imgs/senjutsu.png"
+    "senjutsu": {
+      "name": "Senjutsu",
+      "description": "Estratégia, honra e peso cinematográfico! Você reverencia a fase mais recente da banda, coroada pela grandiosidade melódica de 'Hell on Earth' e 'The Writing on the Wall'.",
+      "imagePath": "assets/imgs/senjutsu.png",
+      "spotifyUrl": "https://open.spotify.com/search/Iron%20Maiden%20Senjutsu"
     }
   }
 }

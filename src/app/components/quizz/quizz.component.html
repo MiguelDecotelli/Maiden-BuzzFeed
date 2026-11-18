@@ -1,21 +1,101 @@
-<div class="container quizz-container">
-    <div class="quizz-logo">
-        <h1>MAIDEN FEED</h1>
-    </div>
-    <div *ngIf=!finished class="quizz-questions">
-        <h2>{{myTitle}}</h2>
-        <h3>{{selectedQuestion.question}}</h3>
-    </div>
-    <div *ngIf=!finished class="quizz-options">
-        <button *ngFor="let option of selectedQuestion.options; let i = index" (click)="playerChoice(option.alias)"
-            class="btn-option">
-            {{option.name}}
-        </button>
-    </div>
-    <div *ngIf=finished class="quizz-results">
-        <div *ngIf="selectedAnswer">
-            <h4>SEU ÁLBUM PREFERIDO É:</h4>
-            <img [src]="selectedAnswer.imagePath" alt="Quizz_Result">
+<div class="quiz-overlay">
+  <div class="quiz-card">
+    
+    <header class="quiz-header">
+      <h1 class="logo-title">MAIDEN FEED</h1>
+    </header>
+
+    <!-- Tela Inicial e Perguntas -->
+    <ng-container *ngIf="!finished">
+      <h2 class="main-question">{{ myTitle }}</h2>
+
+      <!-- Botão COMEÇAR (Aparece no lugar da guitarra antes de iniciar) -->
+      <div *ngIf="!started" class="start-section">
+        <button class="metal-btn restart-btn" (click)="startQuizz()">COMEÇAR 🤘</button>
+      </div>
+
+      <!-- Área Oculta: Guitarra + Pergunta + Opções (Só aparece após clicar em COMEÇAR) -->
+      <ng-container *ngIf="started">
+        <div class="question-section">
+          
+          <!-- Medidor de Progresso em formato de Guitarra -->
+          <div class="guitar-progress-wrapper" [title]="'Pergunta ' + (questionIndex + 1) + ' de ' + questionMaxIndex">
+            <div class="guitar-svg-container">
+              
+              <!-- Guitarra Base (Transparente/Escura) -->
+              <svg class="guitar-svg guitar-empty" viewBox="0 0 320 90">
+                <path d="M12,45 L38,14 L92,30 L78,42 L112,42 L112,48 L78,48 L92,60 L38,76 Z" />
+                <rect x="62" y="38" width="6" height="14" rx="1" />
+                <rect x="74" y="38" width="6" height="14" rx="1" />
+                <rect x="110" y="41" width="150" height="8" />
+                <line x1="135" y1="41" x2="135" y2="49" />
+                <line x1="160" y1="41" x2="160" y2="49" />
+                <line x1="185" y1="41" x2="185" y2="49" />
+                <line x1="210" y1="41" x2="210" y2="49" />
+                <line x1="235" y1="41" x2="235" y2="49" />
+                <polygon points="260,41 308,26 292,45 308,54 260,49" />
+              </svg>
+
+              <!-- Guitarra Preenchida -->
+              <div class="guitar-fill-mask" [style.width.%]="progressPercentage">
+                <svg class="guitar-svg guitar-filled" viewBox="0 0 320 90">
+                  <defs>
+                    <linearGradient id="maidenFire" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#8b0000" />
+                      <stop offset="55%" stop-color="#d32f2f" />
+                      <stop offset="100%" stop-color="#ffca28" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#maidenFire)" d="M12,45 L38,14 L92,30 L78,42 L112,42 L112,48 L78,48 L92,60 L38,76 Z" />
+                  <rect x="62" y="38" width="6" height="14" rx="1" fill="#111" />
+                  <rect x="74" y="38" width="6" height="14" rx="1" fill="#111" />
+                  <rect x="110" y="41" width="150" height="8" fill="url(#maidenFire)" />
+                  <polygon fill="#ffca28" points="260,41 308,26 292,45 308,54 260,49" />
+                </svg>
+              </div>
+
+            </div>
+            <span class="guitar-step-label">Pergunta {{ questionIndex + 1 }} de {{ questionMaxIndex }}</span>
+          </div>
+
+          <p class="sub-question mt-3">{{ selectedQuestion.question }}</p>
         </div>
-    </div>
+
+        <div class="options-grid">
+          <button *ngFor="let option of selectedQuestion.options" 
+                  class="metal-btn"
+                  (click)="playerChoice(option.scores)">
+            {{ option.name }}
+          </button>
+        </div>
+      </ng-container>
+    </ng-container>
+
+    <!-- Resultados -->
+    <ng-container *ngIf="finished">
+      <div class="result-section">
+        <h2 class="main-question">A SUA ALMA PERTENCE AO...</h2>
+        <h1 class="result-album-name">{{ selectedAnswer?.name }}</h1>
+        
+        <img [src]="selectedAnswer?.imagePath" class="result-cover" alt="Capa do Álbum">
+        
+        <p class="result-description">{{ selectedAnswer?.description }}</p>
+        
+        <a [href]="selectedAnswer?.spotifyUrl" target="_blank" rel="noopener noreferrer" class="btn-spotify">
+          🎧 Ouvir no Spotify
+        </a>
+
+        <div class="social-share-container">
+          <p>Compartilhe o seu resultado:</p>
+          <div class="social-buttons">
+            <button class="btn-share whatsapp" (click)="shareWhatsApp()">📱 WhatsApp</button>
+            <button class="btn-share x-twitter" (click)="shareX()">🐦 X (Twitter)</button>
+          </div>
+        </div>
+
+        <button class="metal-btn restart-btn" (click)="resetQuizz()">TOCAR NOVAMENTE 🤘</button>
+      </div>
+    </ng-container>
+
+  </div>
 </div>

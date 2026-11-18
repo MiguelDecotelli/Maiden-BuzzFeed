@@ -1,100 +1,243 @@
-.quizz-container {
-    margin: auto;
-    width: 75%;
-    height: 100vh;
+.quiz-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.quizz-logo {
-    color: darkred;
-    -webkit-text-stroke: 3px black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: xx-large;
+.quiz-card {
+  background: rgba(15, 15, 15, 0.88);
+  border: 2px solid #8b0000;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(139, 0, 0, 0.3);
+  width: 100%;
+  max-width: 680px;
+  padding: 35px 40px;
+  text-align: center;
+  color: #fff;
 }
 
-.quizz-questions {
-    margin-top: 2rem;
-    border: solid 2px black;
-    border-radius: 1rem;
-    background-color: black;
-    opacity: .85;
-    color: goldenrod;
-    width: 100%;
-    height: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2rem;
+.logo-title {
+  font-family: 'Metal Mania', cursive, sans-serif;
+  font-size: 3rem;
+  color: #d32f2f;
+  text-shadow: 2px 2px 4px #000;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 12px;
 }
 
-.quizz-questions h3 {
-    color: red;
+.main-question {
+  font-family: 'Metal Mania', cursive, sans-serif;
+  font-size: 1.8rem;
+  color: #ffca28;
+  margin-bottom: 8px;
 }
 
-.quizz-options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 2rem;
+/* --- Guitarra de Progresso --- */
+.guitar-progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto 15px auto;
 }
 
-.btn-option {
-    color: white;
-    /* color: goldenrod; */
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 1rem;
-    opacity: .85;
-    border: 2px solid black;
-    width: 50%;
-    display: inline-block;
-    cursor: pointer;
-    font-family: "Metal Mania";
-    font-size: 1.25rem;
-    padding: .625rem .625rem;
-    text-decoration: none;
-    text-shadow: 0 .125rem 0 black;
+.guitar-svg-container {
+  position: relative;
+  width: 280px;
+  height: 78px;
 }
 
-.btn-option:hover {
-    background-color: black;
-    opacity: 1;
+.guitar-svg {
+  width: 280px;
+  height: 78px;
+  display: block;
 }
 
-.btn-option:active {
-    position: relative;
-    top: .150rem;
+.guitar-empty {
+  fill: rgba(255, 255, 255, 0.07);
+  stroke: rgba(255, 255, 255, 0.28);
+  stroke-width: 2;
 }
 
-.quizz-results {
-    color: goldenrod;
-    opacity: .95;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
+.guitar-fill-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 0 8px rgba(211, 47, 47, 0.85));
 }
 
-.quizz-results h4{
-    background-color: black;
-    opacity: .75;
-    border-radius: 1rem;
-    border: solid 2px black;
-    height: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: underline;
+.guitar-filled {
+  stroke: #ffca28;
+  stroke-width: 1.5;
 }
 
-.quizz-results img{
-    max-width: 17rem;
-    border-radius: 1rem;
+.guitar-step-label {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.85rem;
+  color: #aaa;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: -4px;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.sub-question {
+  font-size: 1.2rem;
+  color: #eee;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.4;
+}
+
+/* Opções em Grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+@media (max-width: 550px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.metal-btn {
+  background: linear-gradient(180deg, #2a2a2a 0%, #111 100%);
+  border: 1px solid #555;
+  color: #e0e0e0;
+  font-family: 'Metal Mania', cursive, sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  padding: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+}
+
+.metal-btn:hover {
+  background: linear-gradient(180deg, #d32f2f 0%, #8b0000 100%);
+  border-color: #ffca28;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(211, 47, 47, 0.5);
+}
+
+/* Resultados */
+.result-album-name {
+  font-family: 'Metal Mania', cursive;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #ffca28, 2px 2px 5px #000;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+.result-cover {
+  max-width: 100%;
+  height: auto;
+  max-height: 360px;
+  border-radius: 8px;
+  border: 2px solid #555;
+  margin: 15px 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+.result-description {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+
+.btn-spotify {
+  display: inline-block;
+  background-color: #1DB954;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 10px rgba(29, 185, 84, 0.4);
+}
+
+.btn-spotify:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+  color: white;
+}
+
+.social-share-container {
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  padding: 18px 0;
+  margin-bottom: 25px;
+}
+
+.social-share-container p {
+  font-family: 'Metal Mania', cursive;
+  font-size: 1.3rem;
+  color: #ffca28;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-share {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-share:hover {
+  transform: translateY(-3px);
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.x-twitter {
+  background-color: #000;
+  border: 1px solid #333;
+}
+
+.restart-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px 40px;
+  font-size: 1.4rem;
 }
